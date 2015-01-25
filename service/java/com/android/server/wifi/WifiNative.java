@@ -107,7 +107,8 @@ public class WifiNative {
         mInterfaceName = interfaceName;
         mTAG = "WifiNative-" + interfaceName;
         if (!interfaceName.equals("p2p0")) {
-            mInterfacePrefix = "IFNAME=" + interfaceName + " ";
+            // mInterfacePrefix = "IFNAME=" + interfaceName + " ";
+            mInterfacePrefix = "";
         } else {
             // commands for p2p0 interface don't need prefix
             mInterfacePrefix = "";

@@ -645,7 +645,8 @@ public class WifiMonitor {
                 }
             } else {
                 // events without prefix belong to p2p0 monitor
-                iface = "p2p0";
+                // iface = "p2p0";
+                iface = "wlan0";
             }
 
             if (VDBG) Log.d(TAG, "Dispatching event to interface: " + iface);
